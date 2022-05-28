@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(151, 203, 248);
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+}
+
+.svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#draw {
+    z-index: 5;
+}
+
+#polygone {
+    z-index: 6;
+}
+
+.polygon {
+    transform-origin: 100% 100%;
+}
+
+#sea {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    min-width: 400vw;
+    min-height: 400vh;
+    background-color: rgb(151, 203, 248);
+}
+
+#boat {
+    position: absolute;
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+    z-index: 10;
+    display: block;
+}
+
+.checkpoint {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    z-index: 0;
+}
+
+.beacon {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(143, 206, 164);
+    z-index: 1;
+}
+
+.used {
+    background-color: rgb(205, 251, 98);
+    z-index: 2;
+}
+
+.seaEntitie {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+}
+
+.Reef {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.Reef_Circle {
+    border-radius: 50%;
+}
+
+.Stream {
+    background-color: rgba(41, 68, 189, 0.445);
+}
+
+.absolute {
+    position: absolute;
+}
+
+#svgWrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(239, 239, 239);
+    border-color: rgb(133, 133, 133);
+    border-width: 1px;
+    border-style: outset;
+    border-image: initial;
+    font-family: initial;
+    text-align: center;
+}
+
+.inputBox {
+    margin: 0.5vw;
+}
+
+#speedInput {
+    width: 6vw;
+}
+
+#cameraDiv:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.button {
+    border-radius: 0;
+    border-color: rgb(133, 133, 133);
+    border-width: 1px;
+    border-style: outset;
+    border-image: initial;
+}
+
+#score {
+    align-self: flex-start;
+}
